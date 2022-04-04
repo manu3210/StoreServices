@@ -1,0 +1,23 @@
+{
+  "Version": 1,
+  "Hash": "JZzjiJIh+OWgKCDEEob2pXCyFpEDEfiBdTw0KiCjQOU=",
+  "Source": "StoreServices.Api.Author",
+  "BasePath": "_content/StoreServices.Api.Author",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [
+    {
+      "Identity": "C:\\Users\\erivas\\Desktop\\Projects\\StoreServices\\StoreServices.Api.Book\\StoreServices.Api.Book.csproj",
+      "Version": 2,
+      "Source": "StoreServices.Api.Book",
+      "GetPublishAssetsTargets": "ComputeReferencedStaticWebAssetsPublishManifest;GetCurrentProjectPublishStaticWebAssetItems",
+      "AdditionalPublishProperties": "Configuration=Debug;Platform=AnyCPU",
+      "AdditionalPublishPropertiesToRemove": "WebPublishProfileFile;TargetFramework;RuntimeIdentifier",
+      "GetBuildAssetsTargets": "GetCurrentProjectBuildStaticWebAssetItems",
+      "AdditionalBuildProperties": "Configuration=Debug;Platform=AnyCPU",
+      "AdditionalBuildPropertiesToRemove": "WebPublishProfileFile;TargetFramework;RuntimeIdentifier"
+    }
+  ],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

@@ -1,0 +1,12 @@
+C:\Users\erivas\Desktop\Projects\StoreServices\StoreServices.RabbitMQ.Bus\bin\Debug\net6.0\StoreServices.RabbitMQ.Bus.deps.json
+C:\Users\erivas\Desktop\Projects\StoreServices\StoreServices.RabbitMQ.Bus\bin\Debug\net6.0\StoreServices.RabbitMQ.Bus.dll
+C:\Users\erivas\Desktop\Projects\StoreServices\StoreServices.RabbitMQ.Bus\bin\Debug\net6.0\ref\StoreServices.RabbitMQ.Bus.dll
+C:\Users\erivas\Desktop\Projects\StoreServices\StoreServices.RabbitMQ.Bus\bin\Debug\net6.0\StoreServices.RabbitMQ.Bus.pdb
+C:\Users\erivas\Desktop\Projects\StoreServices\StoreServices.RabbitMQ.Bus\obj\Debug\net6.0\StoreServices.RabbitMQ.Bus.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\erivas\Desktop\Projects\StoreServices\StoreServices.RabbitMQ.Bus\obj\Debug\net6.0\StoreServices.RabbitMQ.Bus.AssemblyInfoInputs.cache
+C:\Users\erivas\Desktop\Projects\StoreServices\StoreServices.RabbitMQ.Bus\obj\Debug\net6.0\StoreServices.RabbitMQ.Bus.AssemblyInfo.cs
+C:\Users\erivas\Desktop\Projects\StoreServices\StoreServices.RabbitMQ.Bus\obj\Debug\net6.0\StoreServices.RabbitMQ.Bus.csproj.CoreCompileInputs.cache
+C:\Users\erivas\Desktop\Projects\StoreServices\StoreServices.RabbitMQ.Bus\obj\Debug\net6.0\StoreServices.RabbitMQ.Bus.dll
+C:\Users\erivas\Desktop\Projects\StoreServices\StoreServices.RabbitMQ.Bus\obj\Debug\net6.0\ref\StoreServices.RabbitMQ.Bus.dll
+C:\Users\erivas\Desktop\Projects\StoreServices\StoreServices.RabbitMQ.Bus\obj\Debug\net6.0\StoreServices.RabbitMQ.Bus.pdb
+C:\Users\erivas\Desktop\Projects\StoreServices\StoreServices.RabbitMQ.Bus\obj\Debug\net6.0\StoreServices.RabbitMQ.Bus.csproj.AssemblyReference.cache

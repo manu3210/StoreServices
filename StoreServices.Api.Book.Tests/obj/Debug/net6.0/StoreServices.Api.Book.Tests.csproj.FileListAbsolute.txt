@@ -1,0 +1,6 @@
+C:\Users\erivas\Desktop\Projects\StoreServices\StoreServices.Api.Book.Tests\bin\Debug\net6.0\CoverletSourceRootsMapping
+C:\Users\erivas\Desktop\Projects\StoreServices\StoreServices.Api.Book.Tests\obj\Debug\net6.0\StoreServices.Api.Book.Tests.csproj.AssemblyReference.cache
+C:\Users\erivas\Desktop\Projects\StoreServices\StoreServices.Api.Book.Tests\obj\Debug\net6.0\StoreServices.Api.Book.Tests.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\erivas\Desktop\Projects\StoreServices\StoreServices.Api.Book.Tests\obj\Debug\net6.0\StoreServices.Api.Book.Tests.AssemblyInfoInputs.cache
+C:\Users\erivas\Desktop\Projects\StoreServices\StoreServices.Api.Book.Tests\obj\Debug\net6.0\StoreServices.Api.Book.Tests.AssemblyInfo.cs
+C:\Users\erivas\Desktop\Projects\StoreServices\StoreServices.Api.Book.Tests\obj\Debug\net6.0\StoreServices.Api.Book.Tests.csproj.CoreCompileInputs.cache

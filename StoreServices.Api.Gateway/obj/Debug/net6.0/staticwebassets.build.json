@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "UeQhcYKt7kT88UiOeaNQktRBVFKrYFfvDTjKTKr3KAg=",
+  "Source": "StoreServices.Api.Gateway",
+  "BasePath": "_content/StoreServices.Api.Gateway",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "1X3uOqeBVwwm1UCmv3PcUWcHTkv+X6eej4SY9kNr1Nk=",
+  "Source": "StoreServices.Api.Book",
+  "BasePath": "_content/StoreServices.Api.Book",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

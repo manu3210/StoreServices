@@ -1,0 +1,151 @@
+networks:
+  default:
+    external: true
+    name: microservices
+services:
+  storeservices.api.author:
+    build:
+      context: C:\Users\erivas\Desktop\Projects\StoreServices
+      dockerfile: StoreServices.Api.Author/Dockerfile
+      labels:
+        com.microsoft.created-by: visual-studio
+        com.microsoft.visual-studio.project-name: StoreServices.Api.Author
+      target: base
+    container_name: StoreServices.Api.Author
+    entrypoint: tail -f /dev/null
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      ASPNETCORE_LOGGING__CONSOLE__DISABLECOLORS: "true"
+      DOTNET_USE_POLLING_FILE_WATCHER: '1'
+      NUGET_FALLBACK_PACKAGES: /root/.nuget/fallbackpackages
+    image: storeservicesapiauthor:dev
+    labels:
+      com.microsoft.visualstudio.debuggee.arguments: ' --additionalProbingPath /root/.nuget/packages
+        --additionalProbingPath /root/.nuget/fallbackpackages  "/app/bin/Debug/net6.0/StoreServices.Api.Author.dll"'
+      com.microsoft.visualstudio.debuggee.killprogram: /bin/sh -c "if PID=$$(pidof
+        dotnet); then kill $$PID; fi"
+      com.microsoft.visualstudio.debuggee.program: dotnet
+      com.microsoft.visualstudio.debuggee.workingdirectory: /app
+    ports:
+    - published: 6405
+      target: 80
+    tty: true
+    volumes:
+    - C:\Users\erivas\Desktop\Projects\StoreServices\StoreServices.Api.Author:/app:rw
+    - C:\Users\erivas\vsdbg\vs2017u5:/remote_debugger:rw
+    - C:\Users\erivas\AppData\Roaming\ASP.NET\Https:/root/.aspnet/https:ro
+    - C:\Users\erivas\AppData\Roaming\Microsoft\UserSecrets:/root/.microsoft/usersecrets:ro
+    - C:\Program Files (x86)\Microsoft Visual Studio\Shared\NuGetPackages:/root/.nuget/fallbackpackages:ro
+    - C:\Users\erivas\.nuget\packages:/root/.nuget/packages:ro
+    - C:\Users\erivas\Desktop\Projects\StoreServices:/src:rw
+  storeservices.api.book:
+    build:
+      context: C:\Users\erivas\Desktop\Projects\StoreServices
+      dockerfile: StoreServices.Api.Book/Dockerfile
+      labels:
+        com.microsoft.created-by: visual-studio
+        com.microsoft.visual-studio.project-name: StoreServices.Api.Book
+      target: base
+    container_name: StoreServices.Api.Book
+    entrypoint: tail -f /dev/null
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      ASPNETCORE_LOGGING__CONSOLE__DISABLECOLORS: "true"
+      DOTNET_USE_POLLING_FILE_WATCHER: '1'
+      NUGET_FALLBACK_PACKAGES: /root/.nuget/fallbackpackages
+    image: storeservicesapibook:dev
+    labels:
+      com.microsoft.visualstudio.debuggee.arguments: ' --additionalProbingPath /root/.nuget/packages
+        --additionalProbingPath /root/.nuget/fallbackpackages  "/app/bin/Debug/net6.0/StoreServices.Api.Book.dll"'
+      com.microsoft.visualstudio.debuggee.killprogram: /bin/sh -c "if PID=$$(pidof
+        dotnet); then kill $$PID; fi"
+      com.microsoft.visualstudio.debuggee.program: dotnet
+      com.microsoft.visualstudio.debuggee.workingdirectory: /app
+    ports:
+    - published: 6105
+      target: 80
+    tty: true
+    volumes:
+    - C:\Users\erivas\Desktop\Projects\StoreServices\StoreServices.Api.Book:/app:rw
+    - C:\Users\erivas\vsdbg\vs2017u5:/remote_debugger:rw
+    - C:\Users\erivas\AppData\Roaming\ASP.NET\Https:/root/.aspnet/https:ro
+    - C:\Users\erivas\AppData\Roaming\Microsoft\UserSecrets:/root/.microsoft/usersecrets:ro
+    - C:\Program Files (x86)\Microsoft Visual Studio\Shared\NuGetPackages:/root/.nuget/fallbackpackages:ro
+    - C:\Users\erivas\.nuget\packages:/root/.nuget/packages:ro
+    - C:\Users\erivas\Desktop\Projects\StoreServices:/src:rw
+  storeservices.api.gateway:
+    build:
+      context: C:\Users\erivas\Desktop\Projects\StoreServices
+      dockerfile: StoreServices.Api.Gateway/Dockerfile
+      labels:
+        com.microsoft.created-by: visual-studio
+        com.microsoft.visual-studio.project-name: StoreServices.Api.Gateway
+      target: base
+    container_name: StoreServices.Api.Gateway
+    depends_on:
+      storeservices.api.book:
+        condition: service_started
+    entrypoint: tail -f /dev/null
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      ASPNETCORE_LOGGING__CONSOLE__DISABLECOLORS: "true"
+      DOTNET_USE_POLLING_FILE_WATCHER: '1'
+      NUGET_FALLBACK_PACKAGES: /root/.nuget/fallbackpackages
+      Services__Author: http://storeservices.api.gateway
+    image: storeservicesapigateway:dev
+    labels:
+      com.microsoft.visualstudio.debuggee.arguments: ' --additionalProbingPath /root/.nuget/packages
+        --additionalProbingPath /root/.nuget/fallbackpackages  "/app/bin/Debug/net6.0/StoreServices.Api.Gateway.dll"'
+      com.microsoft.visualstudio.debuggee.killprogram: /bin/sh -c "if PID=$$(pidof
+        dotnet); then kill $$PID; fi"
+      com.microsoft.visualstudio.debuggee.program: dotnet
+      com.microsoft.visualstudio.debuggee.workingdirectory: /app
+    ports:
+    - published: 6107
+      target: 80
+    tty: true
+    volumes:
+    - C:\Users\erivas\Desktop\Projects\StoreServices\StoreServices.Api.Gateway:/app:rw
+    - C:\Users\erivas\vsdbg\vs2017u5:/remote_debugger:rw
+    - C:\Users\erivas\AppData\Roaming\ASP.NET\Https:/root/.aspnet/https:ro
+    - C:\Users\erivas\AppData\Roaming\Microsoft\UserSecrets:/root/.microsoft/usersecrets:ro
+    - C:\Program Files (x86)\Microsoft Visual Studio\Shared\NuGetPackages:/root/.nuget/fallbackpackages:ro
+    - C:\Users\erivas\.nuget\packages:/root/.nuget/packages:ro
+    - C:\Users\erivas\Desktop\Projects\StoreServices:/src:rw
+  storeservices.api.shoppingcart:
+    build:
+      context: C:\Users\erivas\Desktop\Projects\StoreServices
+      dockerfile: StoreServices.Api.ShoppingCart/Dockerfile
+      labels:
+        com.microsoft.created-by: visual-studio
+        com.microsoft.visual-studio.project-name: StoreServices.Api.ShoppingCart
+      target: base
+    container_name: StoreServices.Api.ShoppingCart
+    entrypoint: tail -f /dev/null
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      ASPNETCORE_LOGGING__CONSOLE__DISABLECOLORS: "true"
+      DOTNET_USE_POLLING_FILE_WATCHER: '1'
+      NUGET_FALLBACK_PACKAGES: /root/.nuget/fallbackpackages
+      Services__Book: http://storeservices.api.book
+    image: storeservicesapishoppingcart:dev
+    labels:
+      com.microsoft.visualstudio.debuggee.arguments: ' --additionalProbingPath /root/.nuget/packages
+        --additionalProbingPath /root/.nuget/fallbackpackages  "/app/bin/Debug/net6.0/StoreServices.Api.ShoppingCart.dll"'
+      com.microsoft.visualstudio.debuggee.killprogram: /bin/sh -c "if PID=$$(pidof
+        dotnet); then kill $$PID; fi"
+      com.microsoft.visualstudio.debuggee.program: dotnet
+      com.microsoft.visualstudio.debuggee.workingdirectory: /app
+    ports:
+    - published: 6106
+      target: 80
+    tty: true
+    volumes:
+    - C:\Users\erivas\Desktop\Projects\StoreServices\StoreServices.Api.ShoppingCart:/app:rw
+    - C:\Users\erivas\vsdbg\vs2017u5:/remote_debugger:rw
+    - C:\Users\erivas\AppData\Roaming\ASP.NET\Https:/root/.aspnet/https:ro
+    - C:\Users\erivas\AppData\Roaming\Microsoft\UserSecrets:/root/.microsoft/usersecrets:ro
+    - C:\Program Files (x86)\Microsoft Visual Studio\Shared\NuGetPackages:/root/.nuget/fallbackpackages:ro
+    - C:\Users\erivas\.nuget\packages:/root/.nuget/packages:ro
+    - C:\Users\erivas\Desktop\Projects\StoreServices:/src:rw
+version: '3.4'

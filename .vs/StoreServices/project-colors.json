@@ -1,0 +1,61 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "941f0cbf-aea2-4dda-b89f-01233a40e607": {
+      "ProjectGuid": "941f0cbf-aea2-4dda-b89f-01233a40e607",
+      "DisplayName": "StoreServices.Api.Author",
+      "ColorIndex": 0
+    },
+    "cbefef23-fcaf-49b7-9e87-4e0a126f31e2": {
+      "ProjectGuid": "cbefef23-fcaf-49b7-9e87-4e0a126f31e2",
+      "DisplayName": "StoreServices.Api.Author",
+      "ColorIndex": 1
+    },
+    "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3": {
+      "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
+      "DisplayName": "Miscellaneous Files",
+      "ColorIndex": -1
+    },
+    "59523512-bf13-4a06-bb7b-064ca8019f14": {
+      "ProjectGuid": "59523512-bf13-4a06-bb7b-064ca8019f14",
+      "DisplayName": "StoreServices.Api.Book",
+      "ColorIndex": 2
+    },
+    "52aa3ef0-b8ef-4774-9b0d-4d6ba1d29f3c": {
+      "ProjectGuid": "52aa3ef0-b8ef-4774-9b0d-4d6ba1d29f3c",
+      "DisplayName": "StoreServices.Api.Cart",
+      "ColorIndex": 3
+    },
+    "5597470b-e3b5-4adc-8fb0-56f9294eda58": {
+      "ProjectGuid": "5597470b-e3b5-4adc-8fb0-56f9294eda58",
+      "DisplayName": "StoreServices.Api.ShoppingCart",
+      "ColorIndex": 4
+    },
+    "3596f2d8-e48f-48d0-928b-f14047b6a8d2": {
+      "ProjectGuid": "3596f2d8-e48f-48d0-928b-f14047b6a8d2",
+      "DisplayName": "StoreServices.Api.Book.Tests",
+      "ColorIndex": 5
+    },
+    "92f2e5c7-925d-487d-a50a-b11e33c1430a": {
+      "ProjectGuid": "92f2e5c7-925d-487d-a50a-b11e33c1430a",
+      "DisplayName": "docker-compose",
+      "ColorIndex": 6
+    },
+    "9dc1d0d5-c6d3-4397-91e4-ecc47dd8ebb6": {
+      "ProjectGuid": "9dc1d0d5-c6d3-4397-91e4-ecc47dd8ebb6",
+      "DisplayName": "StoreServices.Api.Gateway",
+      "ColorIndex": 7
+    },
+    "fe0333b6-1f2e-4335-812c-db644b5b2f55": {
+      "ProjectGuid": "fe0333b6-1f2e-4335-812c-db644b5b2f55",
+      "DisplayName": "StoreServices.Api.Gateway",
+      "ColorIndex": 8
+    },
+    "77c2f960-8f1b-462c-853c-6172da30aa4d": {
+      "ProjectGuid": "77c2f960-8f1b-462c-853c-6172da30aa4d",
+      "DisplayName": "StoreServices.RabbitMQ.Bus",
+      "ColorIndex": 9
+    }
+  },
+  "NextColorIndex": 10
+}
